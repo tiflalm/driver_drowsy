@@ -10,11 +10,12 @@ This project is a **Driver Monitoring System** that detects **drowsiness and mob
 - **Alarm System**: Triggers an alert when drowsiness or phone usage is detected.
 - **Database Integration**: Sends drowsiness and phone usage events to a **MySQL server** via a **Node.js backend** using **Axios**.
 
+
 ## System Workflow
 1. Capture real-time video frames using OpenCV.
 2. Detect face and facial landmarks using Dlib.
 3. Analyze EAR and MAR values to determine drowsiness.
-4. Detect phone usage using YOLOv8 object detection.
+4. Detect drowsy usage using YOLOv8 object detection.
 5. If drowsiness or phone usage is detected:
    - Start a timer and send the event to the server with a timestamp.
    - If the condition stops, record the end time and send the event duration to the server.
